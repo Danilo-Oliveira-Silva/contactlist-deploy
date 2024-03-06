@@ -20,6 +20,11 @@ public class ContactContext : DbContext, IContactContext
             var user = Environment.GetEnvironmentVariable("DBUSER");
             var password = Environment.GetEnvironmentVariable("DBPASSWORD");
             var port = Environment.GetEnvironmentVariable("DBPORT");
+            Console.WriteLine("server = " + server);
+            Console.WriteLine("database = " + database);
+            Console.WriteLine("user = " + user);
+            Console.WriteLine("password = " + password);
+            Console.WriteLine("port = " + port);
 
             //var connectionString = "Server=viaduct.proxy.rlwy.net;Database=railway;User Id=root;Password=fcbBhGEfE2bGBHCbb2ebGbEcFBDfEBaE;Port=16280";
             var connectionString = "Server="+server+";Database="+database+";User Id="+user+";Password="+password+";Port="+port;
